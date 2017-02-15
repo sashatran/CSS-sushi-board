@@ -1,0 +1,179 @@
+body {
+  background: #f5f5f5;
+}
+
+.container,
+.board,
+.maki,
+.sushi,
+.wasabi,
+.chopstick,
+.greentea {
+  position: absolute;
+}
+
+.container {
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 350px;
+  height: 200px;
+}
+
+.board {
+  width: 300px;
+  height: 200px;
+  background: #CBAD8C;
+  border-radius: 8px;
+  box-shadow: 12px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.maki {
+  top: 15px;
+}
+.maki div {
+  margin: 5px 10px;
+  width: 30px;
+  height: 30px;
+  background: #FFF;
+  border-radius: 100%;
+  border: 3px solid #22382F;
+  background-image: radial-gradient(#ef767a 0%, #ef767a 40%, #ffffff 45%, #ffffff 80%);
+}
+.maki div:nth-child(3), .maki div:nth-child(4) {
+  border: 3px solid #EF767A;
+  background-image: radial-gradient(#e1ce7a 0%, #e1ce7a 38%, #22382f 0%, #22382f 40%, #ffffff 45%, #ffffff 80%);
+}
+
+.maki.right {
+  left: 40px;
+}
+
+.sushi {
+  top: 40px;
+  width: 25px;
+  height: 50px;
+  background: white;
+  left: 100px;
+  border-radius: 6px;
+}
+.sushi:before, .sushi:after {
+  position: absolute;
+  content: '';
+}
+.sushi:before {
+  top: -5px;
+  left: 2px;
+  width: 20px;
+  height: 60px;
+  background: #F45B69;
+  border-radius: 6px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3) 10%, #F45B69 10%);
+  background-size: 10px 10px;
+}
+
+.sushi.two {
+  left: 140px;
+}
+.sushi.two:before {
+  background: #DFBE99;
+  background-image: linear-gradient(rgba(244, 91, 105, 0.4) 10%, #DFBE99 10%);
+  background-size: 10px 10px;
+}
+
+.sushi.three {
+  top: 110px;
+}
+.sushi.three:before {
+  background: #E1CE7A;
+  background-image: linear-gradient(#22382F 10%, #E1CE7A 10%);
+  background-position: 50px 25px;
+  background-size: 60px 60px;
+}
+
+.sushi.four {
+  top: 110px;
+  left: 140px;
+  background: white;
+}
+
+.wasabi,
+.soysauce {
+  width: 30px;
+  height: 28px;
+  background: #74AF82;
+  border-radius: 6px;
+  top: 90px;
+  left: 190px;
+  border: 4px solid #FFF;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.wasabi:before, .wasabi:after,
+.soysauce:before,
+.soysauce:after {
+  position: absolute;
+  content: '';
+  background: #F5F5F5;
+  border-radius: 100px;
+  opacity: 0.4;
+}
+.wasabi:before,
+.soysauce:before {
+  width: 3px;
+  height: 13px;
+  left: 22px;
+  top: 4px;
+}
+.wasabi:after,
+.soysauce:after {
+  width: 4px;
+  height: 4px;
+  top: 19px;
+  left: 22px;
+}
+
+.soysauce {
+  position: absolute;
+  top: 140px;
+  left: 190px;
+  background: #846267;
+}
+
+.chopstick {
+  top: 88px;
+  left: 250px;
+}
+.chopstick div {
+  position: absolute;
+  width: 3px;
+  border-bottom: 100px solid #FDD692;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  box-shadow: 3px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.chopstick div:nth-child(2) {
+  left: 10px;
+}
+
+.rest {
+  position: absolute;
+  top: 96px;
+  left: 245px;
+  width: 25px;
+  height: 10px;
+  background: #FFF;
+}
+
+.greentea {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background: #A6CCAF;
+  border: 3px solid white;
+  left: 205px;
+  top: 18px;
+  background: radial-gradient(#8fb391 20%, #9dc49f 46%, #9dc49f 50%);
+  box-shadow: inset 10px 4px 0 rgba(0, 0, 0, 0.1), 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
